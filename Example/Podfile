@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'BigRouter_Example' do
+  pod 'BigRouter', :path => '../'
+
+  target 'BigRouter_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+  pod 'Expecta'
+  end
+end
