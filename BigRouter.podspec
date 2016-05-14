@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "BigRouter"
-  s.version          = "0.1.0"
+  s.version          = "1.0.0"
   s.summary          = "A short description of BigRouter."
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'BigRouter/Classes/**/*'
+  
   
   # s.resource_bundles = {
   #   'BigRouter' => ['BigRouter/Assets/*.png']
@@ -38,5 +38,32 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  
+  s.default_subspec = 'All'
+  
+  s.subspec 'All' do |all|
+     all.dependency 'BigRouter/Core'
+     all.dependency 'BigRouter/MMDrawerController'
+     all.dependency 'BigRouter/UIViewController'
+  end
+  
+  s.subspec 'Core' do |cs|
+  	 cs.source_files = 'BigRouter/Classes/*'
+     cs.dependency 'BigUtil', '~> 1.1.0'
+ 	 cs.dependency 'HHRouter', '~> 0.1.5'
+  end
+  
+  s.subspec 'UIViewController' do |ui|
+  	 ui.source_files = 'BigRouter/Classes/UIViewController/*'
+     ui.dependency 'BigRouter/Core'
+ 	 ui.dependency 'KPAStoryboardConvenience', '~> 1.0'
+  end
+  
+  s.subspec 'MMDrawerController' do |mm|
+  	 mm.source_files = 'BigRouter/Classes/MMDrawerController/*'
+     mm.dependency 'BigRouter/Core'
+ 	 mm.dependency 'MMDrawerController', '~> 0.6'
+  end
+ 
+ 
 end
