@@ -24,6 +24,10 @@ pod "BigRouter"
 
 Vincil Bishop, vincil.bishop@vbishop.com
 
+## Acknowledgments
+
+* A big thanks to [Surge](http://www.surgeforward.com) for their contributions to this and other open source projects.
+
 ## License
 
 BigRouter is available under the MIT license. See the LICENSE file for more info.
