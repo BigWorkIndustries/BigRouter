@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "BigRouter"
   s.version          = "1.0.0"
-  s.summary          = "A short description of BigRouter."
+  s.summary          = "The biggest view router for iOS yet."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+BigRouter simplifies the transitions, navigation, and deep state of a complex DRY view hierarchy. 
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/BigRouter"
+  s.homepage         = "https://github.com/BigWorkIndustries/BigRouter"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Vincil Bishop" => "vincil.bishop@vbishop.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/BigRouter.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/BigWorkIndustries/BigRouter.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
