@@ -1,0 +1,6 @@
+framework module KPAStoryboardConvenience {
+  umbrella header "KPAStoryboardConvenience-umbrella.h"
+
+  export *
+  module * { export * }
+}

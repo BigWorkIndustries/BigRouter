@@ -1,0 +1,6 @@
+framework module BigRouter {
+  umbrella header "BigRouter-umbrella.h"
+
+  export *
+  module * { export * }
+}

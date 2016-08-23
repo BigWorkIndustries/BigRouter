@@ -7,6 +7,7 @@
 //
 
 #import "UINavigationController+BIGRouter.h"
+#import "UIViewController+BIGRouter.h"
 #import "BIGRouter.h"
 
 @implementation UINavigationController (BIGRouter)
@@ -16,7 +17,7 @@
     [self BIG_pushRoute:route animated:YES completion:nil];
 }
 
-- (void) BIG_pushRoute:(NSString*)route beforeCompletion:(BIG_STRONG_BLOCK(id,controller))beforeCompletion
+- (void) BIG_pushRoute:(NSString*)route beforeCompletion:(BIG_STRONG_BLOCK(UINavigationController*))beforeCompletion
 {
     [self BIG_pushRoute:route animated:YES completion:nil beforeCompletion:beforeCompletion onCompletion:nil];
 }
@@ -26,14 +27,14 @@
     [self BIG_pushRoute:route animated:flag completion:completion beforeCompletion:nil onCompletion:nil];
 }
 
-- (void) BIG_pushRoute:(NSString*)route animated:(BOOL)flag completion:(void (^)(void))completion beforeCompletion:(BIG_STRONG_BLOCK(id,controller))beforeCompletion onCompletion:(BIGCompletionBlock)onCompletion
+- (void) BIG_pushRoute:(NSString*)route animated:(BOOL)flag completion:(void (^)(void))completion beforeCompletion:(BIG_STRONG_BLOCK(UINavigationController*))beforeCompletion onCompletion:(BIGCompletionBlock)onCompletion
 {
     [[BIGRouter sharedRouter] getRoute:route onCompletion:onCompletion  result:^(UIViewController *controller){
         
         if (controller) {
             
             if (beforeCompletion) {
-                beforeCompletion(controller);
+                beforeCompletion((UINavigationController*)controller);
             }
             
             [self pushViewController:controller animated:flag];
