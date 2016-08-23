@@ -35,7 +35,7 @@
  *
  *  @see: https://github.com/Huohua/HHRouter
  */
-- (void) configureRoutes:(BIG_STRONG_BLOCK(BIGRouter*,router))configBlock;
+- (void) configureRoutes:(BIG_STRONG_BLOCK(BIGRouter*))configBlock;
 
 /**
  *  Convenience method that only executes a route, but does not return a result.
@@ -50,7 +50,7 @@
  *  @param route  The router string to match.
  *  @param result The result, strongly casted to a UIViewController.
  */
-- (void) getRoute:(NSString*)route result:(BIG_STRONG_BLOCK(UIViewController*,viewController))result;
+- (void) getRoute:(NSString*)route result:(BIG_STRONG_BLOCK(UIViewController*))result;
 
 /**
  *  Convenience method to get a route with a block to be executed on completion.
@@ -61,7 +61,7 @@
  *
  *  @discussion Useful for things like enforcing a logged in state where you would want logic to be executed after the user has logged in. Available as the "onCompletion" key in parameters.
  */
-- (void) getRoute:(NSString*)route onCompletion:(BIGCompletionBlock)completion result:(BIG_STRONG_BLOCK(UIViewController*,viewController))result;
+- (void) getRoute:(NSString*)route onCompletion:(BIGCompletionBlock)completion result:(BIG_STRONG_BLOCK(UIViewController*))result;
 
 /**
  *  Convenience method to get a route with a block to be executed on completion and parameters.
@@ -71,7 +71,7 @@
  *  @param completion A block to be executed if the destination controller chooses to after the arbitrary opertaion has been completed.
  *   @param result The result, strongly casted to a UIViewController.
  */
-- (void) getRoute:(NSString*)route params:(NSDictionary*)params onCompletion:(BIGCompletionBlock)completion result:(BIG_STRONG_BLOCK(UIViewController*,viewController))result;
+- (void) getRoute:(NSString*)route params:(NSDictionary*)params onCompletion:(BIGCompletionBlock)completion result:(BIG_STRONG_BLOCK(UIViewController*))result;
 
 /**
  *  Convenience method to get a route with a block to be executed on completion and parameters, can return any instance instead of a strong UIViewController cast.

@@ -1,0 +1,6 @@
+framework module VTSystemVersion {
+  umbrella header "VTSystemVersion-umbrella.h"
+
+  export *
+  module * { export * }
+}

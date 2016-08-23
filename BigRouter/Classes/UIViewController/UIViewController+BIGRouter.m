@@ -49,7 +49,7 @@
     [self BIG_presentRoute:route animated:YES completion:nil];
 }
 
-- (void) BIG_presentRoute:(NSString*)route beforeCompletion:(BIG_STRONG_BLOCK(id,controller))beforeCompletion
+- (void) BIG_presentRoute:(NSString*)route beforeCompletion:(BIG_STRONG_BLOCK(UIViewController*))beforeCompletion
 {
     [self BIG_presentRoute:route animated:YES completion:nil beforeCompletion:beforeCompletion onCompletion:nil];
 }
@@ -59,7 +59,7 @@
     [self BIG_presentRoute:route animated:flag completion:completion beforeCompletion:nil onCompletion:nil];
 }
 
-- (void) BIG_presentRoute:(NSString*)route animated:(BOOL)flag completion:(void (^)(void))completion beforeCompletion:(BIG_STRONG_BLOCK(id,controller))beforeCompletion onCompletion:(BIGCompletionBlock)onCompletion
+- (void) BIG_presentRoute:(NSString*)route animated:(BOOL)flag completion:(void (^)(void))completion beforeCompletion:(BIG_STRONG_BLOCK(UIViewController*))beforeCompletion onCompletion:(BIGCompletionBlock)onCompletion
 {
     [[BIGRouter sharedRouter] getRoute:route onCompletion:onCompletion  result:^(UIViewController *controller){
         

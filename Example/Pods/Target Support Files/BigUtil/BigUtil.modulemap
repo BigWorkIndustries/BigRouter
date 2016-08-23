@@ -1,0 +1,6 @@
+framework module BigUtil {
+  umbrella header "BigUtil-umbrella.h"
+
+  export *
+  module * { export * }
+}

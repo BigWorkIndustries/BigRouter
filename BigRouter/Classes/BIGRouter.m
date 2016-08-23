@@ -36,7 +36,7 @@ static BIGRouter *_sharedRouter;
     return self;
 }
 
-- (void) configureRoutes:(BIG_STRONG_BLOCK(BIGRouter*,router))configBlock
+- (void) configureRoutes:(BIG_STRONG_BLOCK(BIGRouter*))configBlock
 {
     configBlock(self);
 }
@@ -46,17 +46,17 @@ static BIGRouter *_sharedRouter;
     [self getRoute:route result:nil];
 }
 
-- (void) getRoute:(NSString*)route result:(BIG_STRONG_BLOCK(UIViewController*,viewController))result
+- (void) getRoute:(NSString*)route result:(BIG_STRONG_BLOCK(UIViewController*))result
 {
     [self getRoute:route onCompletion:nil result:result];
 }
 
-- (void) getRoute:(NSString*)route onCompletion:(BIGCompletionBlock)completion result:(BIG_STRONG_BLOCK(UIViewController*,viewController))result
+- (void) getRoute:(NSString*)route onCompletion:(BIGCompletionBlock)completion result:(BIG_STRONG_BLOCK(UIViewController*))result
 {
     [self getRoute:route params:nil onCompletion:completion result:result];
 }
 
-- (void) getRoute:(NSString*)route params:(NSDictionary*)params onCompletion:(BIGCompletionBlock)completion result:(BIG_STRONG_BLOCK(UIViewController*,viewController))result
+- (void) getRoute:(NSString*)route params:(NSDictionary*)params onCompletion:(BIGCompletionBlock)completion result:(BIG_STRONG_BLOCK(UIViewController*))result
 {
     [self getRoute:route params:params onCompletion:completion genericResult:^(id sender){
     

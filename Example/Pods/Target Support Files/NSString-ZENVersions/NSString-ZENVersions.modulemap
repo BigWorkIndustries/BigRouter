@@ -1,0 +1,6 @@
+framework module NSString_ZENVersions {
+  umbrella header "NSString-ZENVersions-umbrella.h"
+
+  export *
+  module * { export * }
+}

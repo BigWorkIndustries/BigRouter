@@ -1,0 +1,49 @@
+//
+//  RMLogFormatter.h
+//
+//  Created by Ryan Maloney on 9/6/14.
+//  Copyright (c) 2014 Ryan Maloney
+//
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in all
+//  copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+//  SOFTWARE.
+//
+
+#import <Foundation/Foundation.h>
+#import <CocoaLumberjack/CocoaLumberjack.h>
+
+#import "RMLogFormatterOptions.h"
+
+@interface RMLogFormatter : NSObject <DDLogFormatter>
+
+@property (nonatomic, readonly) NSUInteger lineLength;
+@property (nonatomic, readonly) RMLogFormatterOptions options;
+
+@property (nonatomic, readonly, getter=isTimestampEnabled) BOOL timestampEnabled;
+@property (nonatomic, readonly, getter=isLogFlagEnabled) BOOL logFlagEnabled;
+@property (nonatomic, readonly, getter=isFileNameEnabled) BOOL fileNameEnabled;
+@property (nonatomic, readonly, getter=isMethodNameEnabled) BOOL methodNameEnabled;
+@property (nonatomic, readonly, getter=isLineNumberEnabled) BOOL lineNumberEnabled;
+@property (nonatomic, readonly, getter=isThreadNameEnabled) BOOL threadNameEnabled;
+@property (nonatomic, readonly, getter=isThreadIDEnabled) BOOL threadIDEnabled;
+
+- (instancetype)init;
+- (instancetype)initWithLogLineLength:(NSUInteger)logLineLength;
+- (instancetype)initWithOptions:(RMLogFormatterOptions)options;
+- (instancetype)initWithLogLineLength:(NSUInteger)logLineLength options:(RMLogFormatterOptions)options NS_DESIGNATED_INITIALIZER;
+
+@end

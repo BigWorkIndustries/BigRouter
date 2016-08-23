@@ -33,7 +33,7 @@ static MMDrawerController *_drawerController;
 }
 
 
-- (void) configureDrawerController:(BIG_STRONG_BLOCK(MMDrawerController*,drawerController))configBlock
+- (void) configureDrawerController:(BIG_STRONG_BLOCK(MMDrawerController*))configBlock
 {
     self.drawerController = [[MMDrawerController alloc] init];
     

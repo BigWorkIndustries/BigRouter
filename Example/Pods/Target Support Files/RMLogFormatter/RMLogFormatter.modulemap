@@ -1,0 +1,6 @@
+framework module RMLogFormatter {
+  umbrella header "RMLogFormatter-umbrella.h"
+
+  export *
+  module * { export * }
+}

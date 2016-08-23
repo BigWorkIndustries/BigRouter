@@ -65,8 +65,9 @@
  *  @param route The route string.
  *  @param flag       A Boolean for animation.
  *  @param completion A block to be run on completion.
+ *  @param beforeCompletion A block to be run before the view controller's operation has completed.
  *  @param onCompletion A block to be run after the view controller's operation has completed.
  */
-- (void) BIG_presentRoute:(NSString*)route animated:(BOOL)flag completion:(void (^)(void))completion onCompletion:(BIGCompletionBlock)onCompletion;
+- (void) BIG_presentRoute:(NSString*)route animated:(BOOL)flag completion:(void (^)(void))completion beforeCompletion:(BIG_STRONG_BLOCK(UIViewController*))beforeCompletion onCompletion:(BIGCompletionBlock)onCompletion;
 
 @end

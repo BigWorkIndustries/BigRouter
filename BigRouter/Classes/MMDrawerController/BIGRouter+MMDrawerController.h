@@ -19,6 +19,6 @@
  *
  *  @param configBlock A block to which the instantiated instance is passed. The instance can be configured in this block.
  */
-- (void) configureDrawerController:(BIG_STRONG_BLOCK(MMDrawerController*,drawerController))configBlock;
+- (void) configureDrawerController:(BIG_STRONG_BLOCK(MMDrawerController*))configBlock;
 
 @end
