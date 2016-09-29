@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UINavigationController+BIGRouter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UINavigationController(BIGRouter)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UINavigationController+BIGRouter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UINavigationController/BIG_pushRoute:</TokenIdentifier>
+			<Abstract type="html">Pushes a route on the navigation controller instance.</Abstract>
+			<DeclaredIn>UINavigationController+BIGRouter.h</DeclaredIn>
+			
+			<Declaration>- (void)BIG_pushRoute:(NSString *)route</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>route</Name>
+					<Abstract type="html">The route string.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_pushRoute:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UINavigationController/BIG_pushRoute:beforeCompletion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UINavigationController+BIGRouter.h</DeclaredIn>
+			
+			<Declaration>- (void)BIG_pushRoute:(NSString *)route beforeCompletion:(BIG_STRONG_BLOCK ( UINavigationController *))beforeCompletion</Declaration>
+			
+			
+			<Anchor>//api/name/BIG_pushRoute:beforeCompletion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UINavigationController/BIG_pushRoute:animated:completion:</TokenIdentifier>
+			<Abstract type="html">Pushes a route on the navigation controller instance.</Abstract>
+			<DeclaredIn>UINavigationController+BIGRouter.h</DeclaredIn>
+			
+			<Declaration>- (void)BIG_pushRoute:(NSString *)route animated:(BOOL)flag completion:(void ( ^ ) ( void ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>route</Name>
+					<Abstract type="html">The route string.</Abstract>
+				</Parameter><Parameter>
+					<Name>flag</Name>
+					<Abstract type="html">A Boolean for animation.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A completion block to be run when the animation ends.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_pushRoute:animated:completion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/vincilbishop/Library/Developer/Shared/Documentation/DocSets/com.bigworkindustries.BigRouter.docset
+Time: 2016-09-29 16:33:05 +0000
