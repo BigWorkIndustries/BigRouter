@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIViewController+BIGRouter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIViewController(BIGRouter)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIViewController+BIGRouter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIViewController/BIG_mapRoute:</TokenIdentifier>
+			<Abstract type="html">Maps a route to this view controller from the main storyboard,</Abstract>
+			<DeclaredIn>UIViewController+BIGRouter.h</DeclaredIn>
+			
+			<Declaration>+ (void)BIG_mapRoute:(NSString *)route</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>route</Name>
+					<Abstract type="html">The route string.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_mapRoute:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIViewController/BIG_mapRoute:toBlock:</TokenIdentifier>
+			<Abstract type="html">Maps a route to this view controller from the main storyboard with a block to be executed.</Abstract>
+			<DeclaredIn>UIViewController+BIGRouter.h</DeclaredIn>
+			
+			<Declaration>+ (void)BIG_mapRoute:(NSString *)route toBlock:(id ( ^ ) ( NSDictionary *params , UIViewController *controller ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>route</Name>
+					<Abstract type="html">The route string.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to be executed before the route is returned.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_mapRoute:toBlock:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIViewController/BIG_mapRoute:fromStoryboard:</TokenIdentifier>
+			<Abstract type="html">Maps a route to this view controller from the storyboard.</Abstract>
+			<DeclaredIn>UIViewController+BIGRouter.h</DeclaredIn>
+			
+			<Declaration>+ (void)BIG_mapRoute:(NSString *)route fromStoryboard:(UIStoryboard *)storyboard</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>route</Name>
+					<Abstract type="html">The route string.</Abstract>
+				</Parameter><Parameter>
+					<Name>storyboard</Name>
+					<Abstract type="html">The storyboard the view controller belongs to.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_mapRoute:fromStoryboard:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIViewController/BIG_mapRoute:fromStoryboard:toBlock:</TokenIdentifier>
+			<Abstract type="html">Maps a route to this view controller from the storyboard, with a block to be executed.</Abstract>
+			<DeclaredIn>UIViewController+BIGRouter.h</DeclaredIn>
+			
+			<Declaration>+ (void)BIG_mapRoute:(NSString *)route fromStoryboard:(UIStoryboard *)storyboard toBlock:(id ( ^ ) ( NSDictionary *params , UIViewController *controller ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>route</Name>
+					<Abstract type="html">The route string.</Abstract>
+				</Parameter><Parameter>
+					<Name>storyboard</Name>
+					<Abstract type="html">The storyboard the view controller belongs to.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to be executed before the route is returned.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_mapRoute:fromStoryboard:toBlock:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIViewController/BIG_presentRoute:</TokenIdentifier>
+			<Abstract type="html">Presents the route from this view controller instance.</Abstract>
+			<DeclaredIn>UIViewController+BIGRouter.h</DeclaredIn>
+			
+			<Declaration>- (void)BIG_presentRoute:(NSString *)route</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>route</Name>
+					<Abstract type="html">The route string.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_presentRoute:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIViewController/BIG_presentRoute:animated:completion:</TokenIdentifier>
+			<Abstract type="html">Presents the route from this view controller instance.</Abstract>
+			<DeclaredIn>UIViewController+BIGRouter.h</DeclaredIn>
+			
+			<Declaration>- (void)BIG_presentRoute:(NSString *)route animated:(BOOL)flag completion:(void ( ^ ) ( void ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>route</Name>
+					<Abstract type="html">The route string.</Abstract>
+				</Parameter><Parameter>
+					<Name>flag</Name>
+					<Abstract type="html">A Boolean for animation.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A block to be run on completion.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_presentRoute:animated:completion:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIViewController/BIG_presentRoute:animated:completion:beforeCompletion:onCompletion:</TokenIdentifier>
+			<Abstract type="html">Presents the route from this view controller instance.</Abstract>
+			<DeclaredIn>UIViewController+BIGRouter.h</DeclaredIn>
+			
+			<Declaration>- (void)BIG_presentRoute:(NSString *)route animated:(BOOL)flag completion:(void ( ^ ) ( void ))completion beforeCompletion:(BIG_STRONG_BLOCK ( UIViewController *))beforeCompletion onCompletion:(BIGCompletionBlock)onCompletion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>route</Name>
+					<Abstract type="html">The route string.</Abstract>
+				</Parameter><Parameter>
+					<Name>flag</Name>
+					<Abstract type="html">A Boolean for animation.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A block to be run on completion.</Abstract>
+				</Parameter><Parameter>
+					<Name>beforeCompletion</Name>
+					<Abstract type="html">A block to be run before the view controller&apos;s operation has completed.</Abstract>
+				</Parameter><Parameter>
+					<Name>onCompletion</Name>
+					<Abstract type="html">A block to be run after the view controller&apos;s operation has completed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_presentRoute:animated:completion:beforeCompletion:onCompletion:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

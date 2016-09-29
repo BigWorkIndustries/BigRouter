@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/MMDrawerController+BIGRouter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/MMDrawerController(BIGRouter)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MMDrawerController+BIGRouter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MMDrawerController/BIG_setCenterRoute:</TokenIdentifier>
+			<Abstract type="html">Sets the center view controller with the route, withCloseAnimation, no completion block.</Abstract>
+			<DeclaredIn>MMDrawerController+BIGRouter.h</DeclaredIn>
+			
+			<Declaration>- (void)BIG_setCenterRoute:(NSString *)route</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>route</Name>
+					<Abstract type="html">The route string.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_setCenterRoute:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MMDrawerController/BIG_setCenterRoute:withCloseAnimation:completion:</TokenIdentifier>
+			<Abstract type="html">Sets the center view controller with the route.</Abstract>
+			<DeclaredIn>MMDrawerController+BIGRouter.h</DeclaredIn>
+			
+			<Declaration>- (void)BIG_setCenterRoute:(NSString *)route withCloseAnimation:(BOOL)closeAnimated completion:(void ( ^ ) ( BOOL finished ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>route</Name>
+					<Abstract type="html">The route string.</Abstract>
+				</Parameter><Parameter>
+					<Name>closeAnimated</Name>
+					<Abstract type="html">YES or NO</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A block to be run when the animation completes.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_setCenterRoute:withCloseAnimation:completion:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MMDrawerController/BIG_setCenterRoute:withCloseAnimation:completion:onCompletion:</TokenIdentifier>
+			<Abstract type="html">Sets the center view controller with the route.</Abstract>
+			<DeclaredIn>MMDrawerController+BIGRouter.h</DeclaredIn>
+			
+			<Declaration>- (void)BIG_setCenterRoute:(NSString *)route withCloseAnimation:(BOOL)closeAnimated completion:(void ( ^ ) ( BOOL finished ))completion onCompletion:(BIGCompletionBlock)onCompletion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>route</Name>
+					<Abstract type="html">The route string.</Abstract>
+				</Parameter><Parameter>
+					<Name>closeAnimated</Name>
+					<Abstract type="html">YES or NO</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A block to be run when the animation</Abstract>
+				</Parameter><Parameter>
+					<Name>onCompletion</Name>
+					<Abstract type="html">A block to be run by the view controller when it&apos;s operation is complete.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_setCenterRoute:withCloseAnimation:completion:onCompletion:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MMDrawerController/BIG_setLeftRoute:</TokenIdentifier>
+			<Abstract type="html">Sets the left view controller with the route.</Abstract>
+			<DeclaredIn>MMDrawerController+BIGRouter.h</DeclaredIn>
+			
+			<Declaration>- (void)BIG_setLeftRoute:(NSString *)route</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>route</Name>
+					<Abstract type="html">The route string.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_setLeftRoute:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MMDrawerController/BIG_setRightRoute:</TokenIdentifier>
+			<Abstract type="html">Sets the right view controller with the route.</Abstract>
+			<DeclaredIn>MMDrawerController+BIGRouter.h</DeclaredIn>
+			
+			<Declaration>- (void)BIG_setRightRoute:(NSString *)route</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>route</Name>
+					<Abstract type="html">The route string.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_setRightRoute:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/BIGRouter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/BIGRouter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BIGRouter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/BIGRouter/setSharedRouter:</TokenIdentifier>
+			<Abstract type="html">Sets the shared router instance.</Abstract>
+			<DeclaredIn>BIGRouter.h</DeclaredIn>
+			
+			<Declaration>+ (void)setSharedRouter:(BIGRouter *)sharedRouter</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sharedRouter</Name>
+					<Abstract type="html">A BIGRouter instance.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setSharedRouter:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/BIGRouter/sharedRouter</TokenIdentifier>
+			<Abstract type="html">A shared router instance for convenience.</Abstract>
+			<DeclaredIn>BIGRouter.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)sharedRouter</Declaration>
+			
+			<ReturnValue><Abstract type="html">The shared router instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedRouter</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BIGRouter/configureRoutes:</TokenIdentifier>
+			<Abstract type="html">Configure routes using a block</Abstract>
+			<DeclaredIn>BIGRouter.h</DeclaredIn>
+			
+			<Declaration>- (void)configureRoutes:(BIG_STRONG_BLOCK ( BIGRouter *))configBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>configBlock</Name>
+					<Abstract type="html">The block that will configure routes.
+
+@see: https://github.com/Huohua/HHRouter</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/configureRoutes:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BIGRouter/go:</TokenIdentifier>
+			<Abstract type="html">Convenience method that only executes a route, but does not return a result.</Abstract>
+			<DeclaredIn>BIGRouter.h</DeclaredIn>
+			
+			<Declaration>- (void)go:(NSString *)route</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>route</Name>
+					<Abstract type="html">The route string.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/go:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BIGRouter/getRoute:result:</TokenIdentifier>
+			<Abstract type="html">Convenience method to get a route.</Abstract>
+			<DeclaredIn>BIGRouter.h</DeclaredIn>
+			
+			<Declaration>- (void)getRoute:(NSString *)route result:(BIG_STRONG_BLOCK ( UIViewController *))result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>route</Name>
+					<Abstract type="html">The router string to match.</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">The result, strongly casted to a UIViewController.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getRoute:result:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BIGRouter/getRoute:onCompletion:result:</TokenIdentifier>
+			<Abstract type="html">Convenience method to get a route with a block to be executed on completion.</Abstract>
+			<DeclaredIn>BIGRouter.h</DeclaredIn>
+			
+			<Declaration>- (void)getRoute:(NSString *)route onCompletion:(BIGCompletionBlock)completion result:(BIG_STRONG_BLOCK ( UIViewController *))result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>route</Name>
+					<Abstract type="html">The router string to match.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A block to be executed if the destination controller chooses to after the arbitrary opertaion has been completed.</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">The result, strongly casted to a UIViewController.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getRoute:onCompletion:result:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BIGRouter/getRoute:params:onCompletion:result:</TokenIdentifier>
+			<Abstract type="html">Convenience method to get a route with a block to be executed on completion and parameters.</Abstract>
+			<DeclaredIn>BIGRouter.h</DeclaredIn>
+			
+			<Declaration>- (void)getRoute:(NSString *)route params:(NSDictionary *)params onCompletion:(BIGCompletionBlock)completion result:(BIG_STRONG_BLOCK ( UIViewController *))result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>route</Name>
+					<Abstract type="html">The router string to match.</Abstract>
+				</Parameter><Parameter>
+					<Name>params</Name>
+					<Abstract type="html">Parameters to pass to the route.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A block to be executed if the destination controller chooses to after the arbitrary opertaion has been completed.</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">The result, strongly casted to a UIViewController.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getRoute:params:onCompletion:result:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BIGRouter/getRoute:params:onCompletion:genericResult:</TokenIdentifier>
+			<Abstract type="html">Convenience method to get a route with a block to be executed on completion and parameters, can return any instance instead of a strong UIViewController cast.</Abstract>
+			<DeclaredIn>BIGRouter.h</DeclaredIn>
+			
+			<Declaration>- (void)getRoute:(NSString *)route params:(NSDictionary *)params onCompletion:(BIGCompletionBlock)completion genericResult:(BIGBlock)genericResult</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>route</Name>
+					<Abstract type="html">The router string to match.</Abstract>
+				</Parameter><Parameter>
+					<Name>params</Name>
+					<Abstract type="html">Parameters to pass to the route.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A block to be executed if the destination controller chooses to after the arbitrary opertaion has been completed.</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">The result, strongly casted to a UIViewController.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getRoute:params:onCompletion:genericResult:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BIGRouter/drawerController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BIGRouter+MMDrawerController.h</DeclaredIn>
+			
+			<Declaration>- (MMDrawerController *)drawerController</Declaration>
+			
+			
+			<Anchor>//api/name/drawerController</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BIGRouter/configureDrawerController:</TokenIdentifier>
+			<Abstract type="html">A method for configuring the MMDRawerController. Automatically instantiates and instance and assignes it to drawerController.</Abstract>
+			<DeclaredIn>BIGRouter+MMDrawerController.h</DeclaredIn>
+			
+			<Declaration>- (void)configureDrawerController:(BIG_STRONG_BLOCK ( MMDrawerController *))configBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>configBlock</Name>
+					<Abstract type="html">A block to which the instantiated instance is passed. The instance can be configured in this block.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/configureDrawerController:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
